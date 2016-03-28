@@ -10,3 +10,4 @@ RUN cd $HOME/wildfly \
 
 # Set the default command to run on boot
 ENTRYPOINT ["/opt/jboss/wildfly/bin/standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0", "-c", "standalone-apiman.xml"]
+EXPOSE 8080
